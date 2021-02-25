@@ -1,0 +1,45 @@
+.gallery {
+    margin-top: 73px;
+    margin-right: 73px;
+}
+.gallery img {
+    float: left;
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+
+    .gallery {
+        margin-right: 0;
+    }
+
+    .gallery img {
+        float: left;
+        transition: 1s;
+        /*padding: 15px;*/
+        width: 40%;
+    }
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .gallery {
+        margin-right: 0;
+    }
+
+    .gallery img {
+        float: left;
+        transition: 1s;
+        /*padding: 15px;*/
+        width: 40%;
+    }
+
+}

@@ -1,0 +1,441 @@
+html body {
+    font-family: verdana;
+}
+
+header {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+}
+
+h1, h2 {
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 73px;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 73px;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.uvod {
+    margin-top: -20px;
+    width: 50%;
+}
+
+nav ul {
+    margin: 0px;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+    height: 73px;
+    line-height: 4.3em;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 20px 80px;
+}
+
+nav ul li:hover, .aktivni {
+    background: #68552127;
+    box-shadow: 0px 0px 7px black;
+}
+
+section {
+    text-align: left;
+    min-height: 1080px;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+body {
+    background-color: rgb(163, 133, 33);
+    /*background-image: no-repeat;*/
+    background-size: 100%;
+}
+
+.background-image {
+    background-image: url('field.jpg');
+    position: fixed;
+    z-index: -1;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.content_nav {
+    position: relative;
+    z-index: 3;
+}
+
+.content {
+    z-index: 1;
+}
+
+
+
+
+
+aside {
+    float: left;
+    width: 50%;
+    /*text-align: justify;*/
+}
+
+.text_uvod {
+    position: relative;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.white_back {
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 1em;
+    border-width: 1px;
+    /*border-style: groove; 
+    border-color: black;*/  
+}
+
+
+#vel {
+    margin-top: 73px;
+    text-align: center;
+    width: 90%;
+    border: black;
+}
+
+.obr_titulka {
+    opacity: 55%;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.wanted {
+    /*position: absolute;*/
+    position: fixed;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-family: "Lucida Console", Courier, monospace;
+    text-shadow: 2px 2px 8px;
+    opacity: 0.3;
+}
+
+.video {
+    margin-top: 2em;
+}
+
+.kapela {
+    margin-bottom: 7rem;
+}
+
+#logo {
+    margin-top: 10px;
+    margin-right: 15px;
+    float: left;
+    opacity: 10%;
+}
+
+footer {
+    /*display: none;*/
+    clear: both;
+    position: relative;
+    margin-top: 15px;
+    text-align: center; 
+}
+
+
+#kontakt {
+    margin-top: 73px;
+}
+
+#mail {
+    color: blue;
+}
+
+.paul {
+    width: 50%;
+    display: none;
+}
+
+.pocitadlo {
+    display: none;
+}
+
+#pixlaSmutek {
+   /* position: absolute; */
+    width: 50%;
+    
+    z-index: 2;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        display: none
+    }
+
+    .dropbtn {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: rgb(54, 52, 52);
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 70px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: rgba(128, 128, 128, 0.253);}
+      
+      .show {display: block;}
+
+      body {
+          /*background-image: none;*/
+          background-color: rgb(163, 133, 33);
+          background-size: cover;
+      }
+
+      section {
+        padding: 0;
+        background-image: url("logotyp.jpg");
+        background-size: 113px;
+        background-repeat: repeat-x;
+        color: black;
+        /*background-color: rgb(22, 22, 21);*/
+      }
+
+      .uvod {
+          width: 100%;
+      }
+
+      aside {
+          float: none;
+          width: 100%;
+      }
+
+      .bezici_odsazeni {
+        margin-top: 10rem;
+        }
+
+      .wanted {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        text-align: center;
+        font-family: "Lucida Console", Courier, monospace;
+        text-shadow: 2px 2px 8px;
+    }
+
+      #pravicko {
+          margin: 0;
+      }
+
+      #odsazeni {
+          margin: 0;
+      }
+
+      #poddrat {
+          margin: 0;
+      }
+
+      iframe {
+        width: auto;
+        height: auto;
+      }
+
+      footer {
+          /*display: none;*/
+        clear: both;
+        position: relative;
+        text-align: center;
+      }
+
+      .paul {
+        width: 100%;
+    }
+
+    #pixlaSmutek {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    header {
+        display: none
+    }
+
+    .dropbtn {
+        background-color: black;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: rgb(54, 52, 52);
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:  whitesmoke;
+        min-width: 70px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color:rgba(128, 128, 128, 0.253);}
+      
+      .show {display: block;}
+
+      body {
+          /*background-image: none;*/
+          background-color: rgb(163, 133, 33);
+          background-size: cover;
+      }
+
+      section {
+          padding: 0;
+          background-image: url("logotyp.jpg");
+          background-size: 113px;
+          background-repeat: repeat-x;
+          color: black;
+         /* background-color: rgb(22, 22, 21);*/
+      }
+
+      .uvod {
+        width: 100%;
+    }
+
+      aside {
+        float: none;
+        width:100%;
+    }
+
+    .bezici_odsazeni {
+        margin-top: 10rem;
+    }
+
+    .wanted {
+        position: relative;
+        margin-top: 5rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Lucida Console", Courier, monospace;
+        text-shadow: 2px 2px 8px;
+    }
+
+      #pravicko {
+          margin: 0;
+      }
+
+      #odsazeni {
+          margin: 0;
+      }
+
+      #poddrat {
+          margin: 0;
+      }
+
+      iframe {
+        width: auto;
+        height: auto;
+      }
+
+      footer {
+          /*display: none;*/
+        clear: both;
+        position: relative;
+        text-align: center;
+      }
+
+      .paul {
+        width: 100%;
+    }
+
+    #pixlaSmutek {
+        display: none;
+    }
+
+      
+
+}
